@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CAAD13 Disc Rival AXS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        section {
+            margin: 2rem auto;
+            width: 80%;
+            background-color: white;
+            padding: 2rem;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        .bike-list {
+            /* display: flex; */
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .bike-item {
+            position: relative;
+            /* width: 500px; */
+            margin: 1rem;
+            cursor: pointer;
+        }
+
+        .bike-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            /* transition: transform 0.3s ease; */
+        }
+
+        .bike-item img:hover {
+            /* transform: scale(1.1); */
+        }
+
+        .bike-name {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(0, 0, 0, 0.6);
+            color: white;
+            font-size: 1.2rem;
+            text-align: center;
+            padding: 0.5rem;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .bike-item:hover .bike-name {
+            opacity: 1;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>CAAD13 Disc Rival AXS</h1>
+    </header>
+
+    <section>
+        <div class="bike-item">
+            <img src="../images/C22_C13201U_CAAD13_Disc_Rival_AXS_CHK_PD.webp" alt="Cannondale CAAD13 Disc Rival AXS">
+            <div class="bike-name">CAAD13 Disc Rival AXS</div>
+        </div>
+        <div class="bike-item">
+            <img src="../images/geometry-C22_C13201U_CAAD13_Disc_Rival_AXS_CHK_PD.png" alt="Geometry">
+            <div class="bike-name">Geometry</div>
+        </div>
+
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Angel Kafazov. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
