@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Domane SLR 9 AXS Gen 4</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        nav {
+            margin-top: 1rem;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 1rem;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        section {
+            margin: 2rem auto;
+            width: 80%;
+            background-color: #f4f4f4;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        .bike-list {
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .bike-item {
+            position: relative;
+            margin: 1rem;
+            cursor: pointer;
+        }
+
+        .bike-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .bike-name {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(0, 0, 0, 0.6);
+            color: white;
+            font-size: 1.2rem;
+            text-align: center;
+            padding: 0.5rem;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .bike-item:hover .bike-name {
+            opacity: 1;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+
+        nav ul ul {
+            display: none;
+            position: absolute;
+            background-color: #333;
+            padding: 0;
+            list-style: none;
+        }
+
+        nav ul li:hover > ul {
+            display: block;
+        }
+
+        nav ul ul li {
+            margin: 0;
+        }
+
+        nav ul ul li a {
+            padding: 0.5rem 1rem;
+            display: block;
+        }
+
+        nav ul li ul li a {
+            text-align: left;
+            font-size: 0.8rem;
+            background-color: aquamarine;
+        }
+
+        section div table {
+            text-align: left;
+        }
+
+
+        </style>
+</head>
+<body>
+
+    <header>
+        <h1>Cannondale Domane SLR 9 AXS </h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li>
+                    <a href="#">Sections</a>
+                    <ul>
+                        <li><a href="#pictures">Pictures</a></li>
+                        <li><a href="#specs">Specs</a></li>
+                        <li><a href="#geometry">Geometry</a></li>
+                        <li><a href="#video">Video</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="pictures">
+        <div>
+            <img src="../images/DomaneSLR9AXS-25-48021-A-Alt1.webp" alt="Cannondale Domane SLR 9 AXS Gen 4" width="50%">
+            <p><br/>
+            <img src="../images/ScreenShot2023-10-20at12.31.05pm_1024x1024.webp" alt="Cannondale Domane SLR 9 AXS Gen 4" width="50%">
+            <div class="bike-name">Domane SLR 9 AXS Gen 4</div>
+        </div>
+    </section>
+
+    
+
+    <section id="specs">
+        <div>
+
+            <h3>Bike Specifications</h1>
+                <table border="0">
+                    <tr>
+                      <th colspan="2">Frameset</th>
+                    </tr>
+                    <tr>
+                      <td>Frame</td>
+                      <td>800 Series OCLV Carbon, IsoSpeed, internal storage, tapered head tube, internal cable routing, 3S chain keeper, fender mounts, flat mount disc, 142x12mm thru axle</td>
+                    </tr>
+                    <tr>
+                      <td>Fork</td>
+                      <td>Domane SLR carbon, tapered carbon steerer, internal brake routing, fender mounts, flat mount disc, carbon dropouts, 12x100mm thru axle</td>
+                    </tr>
+                    <tr>
+                      <td>Frame fit</td>
+                      <td>Endurance</td>
+                    </tr>
+                    <tr>
+                      <th colspan="2">Wheels</th>
+                    </tr>
+                    <tr>
+                      <td>Wheel front</td>
+                      <td>Bontrager Aeolus RSL 37, OCLV Carbon, Tubeless Ready, 37mm rim depth, 100x12mm thru axle</td>
+                    </tr>
+                    <tr>
+                      <td>Wheel rear</td>
+                      <td>Bontrager Aeolus RSL 37, OCLV Carbon, Tubeless Ready, 37mm rim depth, 142x12mm thru axle</td>
+                    </tr>
+                    <tr>
+                      <td>Skewer front</td>
+                      <td>Bontrager Switch thru axle, removable lever</td>
+                    </tr>
+                    <tr>
+                      <td>Skewer rear</td>
+                      <td>Bontrager Switch thru axle, removable lever</td>
+                    </tr>
+                    <tr>
+                      <td>*Tire</td>
+                      <td>Size: 47, 50, 52, 54, 56, 58, 60, 62<br>Bontrager R3 Hard-Case Lite, Tubeless Ready, aramid bead, 120 tpi, 700x32mm<br>Pirelli P Zero Race, 120 tpi, tubeless compatible, 700x30mm</td>
+                    </tr>
+                    <tr>
+                      <td>Tire part</td>
+                      <td>Bontrager TLR sealant, 60z</td>
+                    </tr>
+                    <tr>
+                      <td>Rim strip</td>
+                      <td>Bontrager TLR</td>
+                    </tr>
+                    <tr>
+                      <td>Max tire size</td>
+                      <td>38mm without fenders, 35mm with fenders</td>
+                    </tr>
+                    <tr>
+                      <th colspan="2">E-System</th>
+                    </tr>
+                    <tr>
+                      <td>Battery</td>
+                      <td>SRAM eTap battery pack (with charger)</td>
+                    </tr>
+                    <tr>
+                      <th colspan="2">Drivetrain</th>
+                    </tr>
+                    <tr>
+                      <td>Shifter</td>
+                      <td>SRAM RED AXS E1</td>
+                    </tr>
+                    <tr>
+                      <td>Front derailleur</td>
+                      <td>SRAM RED AXS E1, braze-on</td>
+                    </tr>
+                    <tr>
+                      <td>Rear derailleur</td>
+                      <td>SRAM RED AXS E1, 36T max cog</td>
+                    </tr>
+                    <tr>
+                      <td>*Crank</td>
+                      <td>Size: 47, 50<br>SRAM RED AXS E1, power meter, 46/33, DUB, 165mm length<br>Size: 52, 54<br>SRAM RED AXS E1, power meter, 46/33, DUB, 170mm length<br>Size: 56, 58<br>SRAM RED AXS E1, power meter, 46/33, DUB, 172.5mm length<br>Size: 60, 62<br>SRAM RED AXS E1, power meter, 46/33, DUB, 175mm length</td>
+                    </tr>
+                </table>
+            
+        </div>
+    </section>
+
+    <section id="geometry">
+        <div>
+            <h3>Geometry</h3>
+            <img src="../images/trek-geometry.png" alt="Geometry" width="50%">
+        </div>
+    </section>
+
+    <section id="video">
+        <div>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/iQbvGmp-oS4?si=JlKTFCTgRmsx7rRD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Angel Kafazov. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table id="sizing-table" class="sizing-table__table"><caption>
+    Sizing table
+  </caption> <thead class="sizing-table__head"><tr class="sizing-table__head-row"><th class="sizing-table__header px-2 py-25 text-xs font-semibold"><!---->
+        Frame size number
+      </th><th class="sizing-table__header px-2 py-25 text-xs font-semibold"><!---->
+        Wheel size
+      </th><th class="sizing-table__header px-2 py-25 text-xs font-semibold"><span class="sizing-table__alias">A — </span>
+        Seat tube
+      </th><th class="sizing-table__header px-2 py-25 text-xs font-semibold"><span class="sizing-table__alias">B — </span>
+        Seat tube angle
+      </th><th class="sizing-table__header px-2 py-25 text-xs font-semibold"><span class="sizing-table__alias">C — </span>
+        Head tube length
+      </th><th class="sizing-table__header px-2 py-25 text-xs font-semibold"><span class="sizing-table__alias">D — </span>
+        Head angle
+      </th><th class="sizing-table__header px-2 py-25 text-xs font-semibold"><span class="sizing-table__alias">E — </span>
+        Effective top tube
+      </th><th class="sizing-table__header px-2 py-25 text-xs font-semibold"><span class="sizing-table__alias">G — </span>
+        Bottom bracket drop
+      </th><th class="sizing-table__header px-2 py-25 text-xs font-semibold"><span class="sizing-table__alias">H — </span>
+        Chainstay length
+      </th><th class="sizing-table__header px-2 py-25 text-xs font-semibold"><span class="sizing-table__alias">I — </span>
+        Offset
+      </th><th class="sizing-table__header px-2 py-25 text-xs font-semibold"><span class="sizing-table__alias">J — </span>
+        Trail
+      </th><th class="sizing-table__header px-2 py-25 text-xs font-semibold"><span class="sizing-table__alias">K — </span>
+        Wheelbase
+      </th><th class="sizing-table__header px-2 py-25 text-xs font-semibold"><span class="sizing-table__alias">L — </span>
+        Standover
+      </th><th class="sizing-table__header px-2 py-25 text-xs font-semibold"><span class="sizing-table__alias">M — </span>
+        Frame reach
+      </th><th class="sizing-table__header px-2 py-25 text-xs font-semibold"><span class="sizing-table__alias">N — </span>
+        Frame stack
+      </th><th class="sizing-table__header px-2 py-25 text-xs font-semibold"><!---->
+        Saddle rail height min (w/short mast)
+      </th><th class="sizing-table__header px-2 py-25 text-xs font-semibold"><!---->
+        Saddle rail height max (w/short mast)
+      </th><th class="sizing-table__header px-2 py-25 text-xs font-semibold"><!---->
+        Saddle rail height min (w/tall mast)
+      </th><th class="sizing-table__header px-2 py-25 text-xs font-semibold"><!---->
+        Saddle rail height max (w/tall mast)
+      </th></tr></thead> <tbody class="sizing-table__body"><tr data-v-05762449="" class="sizing-table__body-row"><td data-v-05762449="" class="sizing-table__data px-2 py-25 text-xs">47cm</td> <td data-v-05762449="" class="sizing-table__data px-2 py-25 text-xs">700c</td> <td data-v-05762449="" class="sizing-table__data px-2 py-25 text-xs">42.0</td> <td data-v-05762449="" class="sizing-table__data px-2 py-25 text-xs">74.6°</td> <td data-v-05762449="" class="sizing-table__data px-2 py-25 text-xs">11.0</td> <td data-v-05762449="" class="sizing-table__data px-2 py-25 text-xs">71.0°</td> <td data-v-05762449="" class="sizing-table__data px-2 py-25 text-xs">50.9</td> <td data-v-05762449="" class="sizing-table__data px-2 py-25 text-xs">8.0</td> <td data-v-05762449="" class="sizing-table__data px-2 py-25 text-xs">42.0</td> <td data-v-05762449="" class="sizing-table__data px-2 py-25 text-xs">5.3</td> <td data-v-05762449="" class="sizing-table__data px-2 py-25 text-xs">6.1</td> <td data-v-05762449="" class="sizing-table__data px-2 py-25 text-xs">98.6</td> <td data-v-05762449="" class="sizing-table__data px-2 py-25 text-xs">68.6</td> <td data-v-05762449="" class="sizing-table__data px-2 py-25 text-xs">36.4</td> <td data-v-05762449="" class="sizing-table__data px-2 py-25 text-xs">52.7</td> <td data-v-05762449="" class="sizing-table__data px-2 py-25 text-xs">55.5</td> <td data-v-05762449="" class="sizing-table__data px-2 py-25 text-xs">62.0</td> <td data-v-05762449="" class="sizing-table__data px-2 py-25 text-xs">58.5</td> <td data-v-05762449="" class="sizing-table__data px-2 py-25 text-xs">65.0</td></tr> <tr data-v-05762449="" class="sizing-table__body-row"><td data-v-05762449="" class="sizing-table__data px-2 py-25 text-xs">50cm</td> <td data-v-05762449="" class="sizing-table__data px-2 py-25 text-xs">700c</td> <td data-v-05762449="" class="sizing-table__data px-2 py-25 text-xs">45.0</td> <td data-v-05762449="" class="sizing-table__data px-2 py-25 text-xs">74.6°</td> <td data-v-05762449="" class="sizing-table__data px-2 py-25 text-xs">13.0</td> <td data-v-05762449="" class="sizing-table__data px-2 py-25 text-xs">71.1°</td> <td data-v-05762449="" class="sizing-table__data px-2 py-25 text-xs">51.9</td> <td data-v-05762449="" class="sizing-table__data px-2 py-25 text-xs">8.0</td> <td data-v-05762449="" class="sizing-table__data px-2 py-25 text-xs">42.0</td> <td data-v-05762449="" class="sizing-table__data px-2 py-25 text-xs">5.3</td> <td data-v-05762449="" class="sizing-table__data px-2 py-25 text-xs">6.0</td> <td data-v-05762449="" class="sizing-table__data px-2 py-25 text-xs">99.6</td> <td data-v-05762449="" class="sizing-table__data px-2 py-25 text-xs">71.6</td> <td data-v-05762449="" class="sizing-table__data px-2 py-25 text-xs">36.8</td> <td data-v-05762449="" class="sizing-table__data px-2 py-25 text-xs">54.6</td> <td data-v-05762449="" class="sizing-table__data px-2 py-25 text-xs">58.5</td> <td data-v-05762449="" class="sizing-table__data px-2 py-25 text-xs">65.0</td> <td data-v-05762449="" class="sizing-table__data px-2 py-25 text-xs">61.5</td> <td data-v-05762449="" class="sizing-table__data px-2 py-25 text-xs">68.0</td></tr> <tr data-v-05762449="" class="sizing-table__body-row"><td data-v-05762449="" class="sizing-table__data px-2 py-25 text-xs">52cm</td> <td data-v-05762449="" class="sizing-table__data px-2 py-25 text-xs">700c</td> <td data-v-05762449="" class="sizing-table__data px-2 py-25 text-xs">47.5</td> <td data-v-05762449="" class="sizing-table__data px-2 py-25 text-xs">74.2°</td> <td data-v-05762449="" class="sizing-table__data px-2 py-25 text-xs">14.5</td> <td data-v-05762449="" class="sizing-table__data px-2 py-25 text-xs">71.3°</td> <td data-v-05762449="" class="sizing-table__data px-2 py-25 text-xs">53.0</td> <td data-v-05762449="" class="sizing-table__data px-2 py-25 text-xs">8.0</td> <td data-v-05762449="" class="sizing-table__data px-2 py-25 text-xs">42.0</td> <td data-v-05762449="" class="sizing-table__data px-2 py-25 text-xs">5.3</td> <td data-v-05762449="" class="sizing-table__data px-2 py-25 text-xs">5.9</td> <td data-v-05762449="" class="sizing-table__data px-2 py-25 text-xs">100.3</td> <td data-v-05762449="" class="sizing-table__data px-2 py-25 text-xs">73.5</td> <td data-v-05762449="" class="sizing-table__data px-2 py-25 text-xs">37.1</td> <td data-v-05762449="" class="sizing-table__data px-2 py-25 text-xs">56.1</td> <td data-v-05762449="" class="sizing-table__data px-2 py-25 text-xs">61.5</td> <td data-v-05762449="" class="sizing-table__data px-2 py-25 text-xs">68.0</td> <td data-v-05762449="" class="sizing-table__data px-2 py-25 text-xs">64.5</td> <td data-v-05762449="" class="sizing-table__data px-2 py-25 text-xs">71.0</td></tr> <tr data-v-05762449="" class="sizing-table__body-row"><td data-v-05762449="" class="sizing-table__data px-2 py-25 text-xs">54cm</td> <td data-v-05762449="" class="sizing-table__data px-2 py-25 text-xs">700c</td> <td data-v-05762449="" class="sizing-table__data px-2 py-25 text-xs">50.0</td> <td data-v-05762449="" class="sizing-table__data px-2 py-25 text-xs">73.7°</td> <td data-v-05762449="" class="sizing-table__data px-2 py-25 text-xs">16.0</td> <td data-v-05762449="" class="sizing-table__data px-2 py-25 text-xs">71.3°</td> <td data-v-05762449="" class="sizing-table__data px-2 py-25 text-xs">54.2</td> <td data-v-05762449="" class="sizing-table__data px-2 py-25 text-xs">8.0</td> <td data-v-05762449="" class="sizing-table__data px-2 py-25 text-xs">42.0</td> <td data-v-05762449="" class="sizing-table__data px-2 py-25 text-xs">5.3</td> <td data-v-05762449="" class="sizing-table__data px-2 py-25 text-xs">5.9</td> <td data-v-05762449="" class="sizing-table__data px-2 py-25 text-xs">101.0</td> <td data-v-05762449="" class="sizing-table__data px-2 py-25 text-xs">75.4</td> <td data-v-05762449="" class="sizing-table__data px-2 py-25 text-xs">37.4</td> <td data-v-05762449="" class="sizing-table__data px-2 py-25 text-xs">57.5</td> <td data-v-05762449="" class="sizing-table__data px-2 py-25 text-xs">64.0</td> <td data-v-05762449="" class="sizing-table__data px-2 py-25 text-xs">70.5</td> <td data-v-05762449="" class="sizing-table__data px-2 py-25 text-xs">67.0</td> <td data-v-05762449="" class="sizing-table__data px-2 py-25 text-xs">73.5</td></tr> <tr data-v-05762449="" class="sizing-table__body-row"><td data-v-05762449="" class="sizing-table__data px-2 py-25 text-xs">56cm</td> <td data-v-05762449="" class="sizing-table__data px-2 py-25 text-xs">700c</td> <td data-v-05762449="" class="sizing-table__data px-2 py-25 text-xs">52.5</td> <td data-v-05762449="" class="sizing-table__data px-2 py-25 text-xs">73.3°</td> <td data-v-05762449="" class="sizing-table__data px-2 py-25 text-xs">17.5</td> <td data-v-05762449="" class="sizing-table__data px-2 py-25 text-xs">71.9°</td> <td data-v-05762449="" class="sizing-table__data px-2 py-25 text-xs">55.4</td> <td data-v-05762449="" class="sizing-table__data px-2 py-25 text-xs">7.8</td> <td data-v-05762449="" class="sizing-table__data px-2 py-25 text-xs">42.0</td> <td data-v-05762449="" class="sizing-table__data px-2 py-25 text-xs">4.8</td> <td data-v-05762449="" class="sizing-table__data px-2 py-25 text-xs">6.1</td> <td data-v-05762449="" class="sizing-table__data px-2 py-25 text-xs">100.8</td> <td data-v-05762449="" class="sizing-table__data px-2 py-25 text-xs">77.6</td> <td data-v-05762449="" class="sizing-table__data px-2 py-25 text-xs">37.7</td> <td data-v-05762449="" class="sizing-table__data px-2 py-25 text-xs">59.1</td> <td data-v-05762449="" class="sizing-table__data px-2 py-25 text-xs">67.0</td> <td data-v-05762449="" class="sizing-table__data px-2 py-25 text-xs">73.5</td> <td data-v-05762449="" class="sizing-table__data px-2 py-25 text-xs">70.0</td> <td data-v-05762449="" class="sizing-table__data px-2 py-25 text-xs">76.5</td></tr> <tr data-v-05762449="" class="sizing-table__body-row"><td data-v-05762449="" class="sizing-table__data px-2 py-25 text-xs">58cm</td> <td data-v-05762449="" class="sizing-table__data px-2 py-25 text-xs">700c</td> <td data-v-05762449="" class="sizing-table__data px-2 py-25 text-xs">54.8</td> <td data-v-05762449="" class="sizing-table__data px-2 py-25 text-xs">73.0°</td> <td data-v-05762449="" class="sizing-table__data px-2 py-25 text-xs">19.5</td> <td data-v-05762449="" class="sizing-table__data px-2 py-25 text-xs">72.0°</td> <td data-v-05762449="" class="sizing-table__data px-2 py-25 text-xs">56.7</td> <td data-v-05762449="" class="sizing-table__data px-2 py-25 text-xs">7.8</td> <td data-v-05762449="" class="sizing-table__data px-2 py-25 text-xs">42.5</td> <td data-v-05762449="" class="sizing-table__data px-2 py-25 text-xs">4.8</td> <td data-v-05762449="" class="sizing-table__data px-2 py-25 text-xs">6.0</td> <td data-v-05762449="" class="sizing-table__data px-2 py-25 text-xs">102.2</td> <td data-v-05762449="" class="sizing-table__data px-2 py-25 text-xs">79.6</td> <td data-v-05762449="" class="sizing-table__data px-2 py-25 text-xs">38.0</td> <td data-v-05762449="" class="sizing-table__data px-2 py-25 text-xs">61.1</td> <td data-v-05762449="" class="sizing-table__data px-2 py-25 text-xs">69.0</td> <td data-v-05762449="" class="sizing-table__data px-2 py-25 text-xs">75.5</td> <td data-v-05762449="" class="sizing-table__data px-2 py-25 text-xs">72.0</td> <td data-v-05762449="" class="sizing-table__data px-2 py-25 text-xs">78.5</td></tr> <tr data-v-05762449="" class="sizing-table__body-row"><td data-v-05762449="" class="sizing-table__data px-2 py-25 text-xs">60cm</td> <td data-v-05762449="" class="sizing-table__data px-2 py-25 text-xs">700c</td> <td data-v-05762449="" class="sizing-table__data px-2 py-25 text-xs">56.7</td> <td data-v-05762449="" class="sizing-table__data px-2 py-25 text-xs">72.8°</td> <td data-v-05762449="" class="sizing-table__data px-2 py-25 text-xs">22.0</td> <td data-v-05762449="" class="sizing-table__data px-2 py-25 text-xs">72.1°</td> <td data-v-05762449="" class="sizing-table__data px-2 py-25 text-xs">57.9</td> <td data-v-05762449="" class="sizing-table__data px-2 py-25 text-xs">7.5</td> <td data-v-05762449="" class="sizing-table__data px-2 py-25 text-xs">42.5</td> <td data-v-05762449="" class="sizing-table__data px-2 py-25 text-xs">4.8</td> <td data-v-05762449="" class="sizing-table__data px-2 py-25 text-xs">5.9</td> <td data-v-05762449="" class="sizing-table__data px-2 py-25 text-xs">103.2</td> <td data-v-05762449="" class="sizing-table__data px-2 py-25 text-xs">81.7</td> <td data-v-05762449="" class="sizing-table__data px-2 py-25 text-xs">38.3</td> <td data-v-05762449="" class="sizing-table__data px-2 py-25 text-xs">63.2</td> <td data-v-05762449="" class="sizing-table__data px-2 py-25 text-xs">71.0</td> <td data-v-05762449="" class="sizing-table__data px-2 py-25 text-xs">77.5</td> <td data-v-05762449="" class="sizing-table__data px-2 py-25 text-xs">74.0</td> <td data-v-05762449="" class="sizing-table__data px-2 py-25 text-xs">80.5</td></tr> <tr data-v-05762449="" class="sizing-table__body-row"><td data-v-05762449="" class="sizing-table__data px-2 py-25 text-xs">62cm</td> <td data-v-05762449="" class="sizing-table__data px-2 py-25 text-xs">700c</td> <td data-v-05762449="" class="sizing-table__data px-2 py-25 text-xs">58.6</td> <td data-v-05762449="" class="sizing-table__data px-2 py-25 text-xs">72.5°</td> <td data-v-05762449="" class="sizing-table__data px-2 py-25 text-xs">24.5</td> <td data-v-05762449="" class="sizing-table__data px-2 py-25 text-xs">72.1°</td> <td data-v-05762449="" class="sizing-table__data px-2 py-25 text-xs">59.3</td> <td data-v-05762449="" class="sizing-table__data px-2 py-25 text-xs">7.5</td> <td data-v-05762449="" class="sizing-table__data px-2 py-25 text-xs">42.5</td> <td data-v-05762449="" class="sizing-table__data px-2 py-25 text-xs">4.8</td> <td data-v-05762449="" class="sizing-table__data px-2 py-25 text-xs">5.9</td> <td data-v-05762449="" class="sizing-table__data px-2 py-25 text-xs">104.2</td> <td data-v-05762449="" class="sizing-table__data px-2 py-25 text-xs">83.5</td> <td data-v-05762449="" class="sizing-table__data px-2 py-25 text-xs">38.6</td> <td data-v-05762449="" class="sizing-table__data px-2 py-25 text-xs">65.6</td> <td data-v-05762449="" class="sizing-table__data px-2 py-25 text-xs">73.0</td> <td data-v-05762449="" class="sizing-table__data px-2 py-25 text-xs">79.5</td> <td data-v-05762449="" class="sizing-table__data px-2 py-25 text-xs">76.0</td> <td data-v-05762449="" class="sizing-table__data px-2 py-25 text-xs">82.5</td></tr>
+</tbody></table>

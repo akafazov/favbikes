@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Defy Advanced Pro 0</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        nav {
+            margin-top: 1rem;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 1rem;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        section {
+            margin: 2rem auto;
+            width: 80%;
+            background-color: #f4f4f4;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        .bike-list {
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .bike-item {
+            position: relative;
+            margin: 1rem;
+            cursor: pointer;
+        }
+
+        .bike-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .bike-name {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(0, 0, 0, 0.6);
+            color: white;
+            font-size: 1.2rem;
+            text-align: center;
+            padding: 0.5rem;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .bike-item:hover .bike-name {
+            opacity: 1;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+
+        nav ul ul {
+            display: none;
+            position: absolute;
+            background-color: #333;
+            padding: 0;
+            list-style: none;
+        }
+
+        nav ul li:hover > ul {
+            display: block;
+        }
+
+        nav ul ul li {
+            margin: 0;
+        }
+
+        nav ul ul li a {
+            padding: 0.5rem 1rem;
+            display: block;
+        }
+
+        nav ul li ul li a {
+            text-align: left;
+            font-size: 0.8rem;
+            background-color: aquamarine;
+        }
+
+        section div table {
+            text-align: left;
+        }
+
+
+        </style>
+</head>
+<body>
+
+    <header>
+        <h1>Cannondale Domane SLR 9 AXS </h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li>
+                    <a href="#">Sections</a>
+                    <ul>
+                        <li><a href="#pictures">Pictures</a></li>
+                        <li><a href="#specs">Specs</a></li>
+                        <li><a href="#geometry">Geometry</a></li>
+                        <li><a href="#video">Video</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="pictures">
+        <div>
+            <img src="../images/MY25DefyAdvancedPro0_ColorAInterstellar.jpg" alt="Giant Defy Advanced Pro 0" width="50%">
+            <p><br/>
+            <img src="../images/MY24DefyAdvancedPro1_ColorAUnicornWhite.jpg" alt="Giant Defy Advanced Pro 0" width="50%">
+            <div class="bike-name">Defy Advanced Pro 0</div>
+        </div>
+    </section>
+
+    
+
+    <section id="specs">
+        <div>
+
+            <h3>Bike Specifications</h1>
+                <a href="../assets/giant-defy-advanced-pro-1-en-us-3422.pdf">
+                    <img src="../images/giant-specifications.png" alt="Specifications" width="50%">
+                </a>
+                <p><br/>
+            </div>
+    </section>
+
+    <section id="geometry">
+        <div>
+            <h3>Geometry</h3>
+            <img src="../images/giant-geometry.png" alt="Geometry" width="50%">
+        </div>
+    </section>
+
+    <section id="video">
+        <div>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/GdcesbYBfm4?si=UCcqslFRh304Spi3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Angel Kafazov. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
