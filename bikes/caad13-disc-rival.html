@@ -21,6 +21,31 @@
             text-align: center;
         }
 
+        nav {
+            margin-top: 1rem;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 1rem;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
         h1 {
             margin: 0;
         }
@@ -30,7 +55,6 @@
             width: 80%;
             background-color: #f4f4f4;
             padding: 2rem;
-            /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
             text-align: center;
         }
 
@@ -39,14 +63,12 @@
         }
 
         .bike-list {
-            /* display: flex; */
             justify-content: space-around;
             flex-wrap: wrap;
         }
 
         .bike-item {
             position: relative;
-            /* width: 500px; */
             margin: 1rem;
             cursor: pointer;
         }
@@ -55,11 +77,6 @@
             width: 100%;
             height: auto;
             border-radius: 5px;
-            /* transition: transform 0.3s ease; */
-        }
-
-        .bike-item img:hover {
-            /* transform: scale(1.1); */
         }
 
         .bike-name {
@@ -87,32 +104,227 @@
             padding: 1rem;
             margin-top: 2rem;
         }
-    </style>
+
+        nav ul ul {
+            display: none;
+            position: absolute;
+            background-color: #333;
+            padding: 0;
+            list-style: none;
+        }
+
+        nav ul li:hover > ul {
+            display: block;
+        }
+
+        nav ul ul li {
+            margin: 0;
+        }
+
+        nav ul ul li a {
+            padding: 0.5rem 1rem;
+            display: block;
+        }
+
+        nav ul li ul li a {
+            text-align: left;
+            font-size: 0.8rem;
+            background-color: aquamarine;
+        }
+
+        section div table {
+            text-align: left;
+        }
+
+
+        </style>
 </head>
 <body>
 
     <header>
-        <h1>CAAD13 Disc Rival AXS</h1>
+        <h1>Cannondale CAAD13 Disc Rival AXS</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li>
+                    <a href="#">Sections</a>
+                    <ul>
+                        <li><a href="#pictures">Pictures</a></li>
+                        <li><a href="#specs">Specs</a></li>
+                        <li><a href="#geometry">Geometry</a></li>
+                        <li><a href="#video">Video</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
     </header>
 
-    <section>
+    <section id="pictures">
         <div>
-            <img src="../images/C22_C13201U_CAAD13_Disc_Rival_AXS_CHK_PD.webp" alt="Cannondale CAAD13 Disc Rival AXS" width="100%">
+            <img src="../images/C22_C13201U_CAAD13_Disc_Rival_AXS_CHK_PD.webp" alt="Cannondale CAAD13 Disc Rival AXS" width="50%">
+            <p><br/>
+            <img src="../images/C24_CAAD13_PDP_Desktop_4.jpg" alt="Cannondale CAAD13 Disc Rival AXS" width="50%">
             <div class="bike-name">CAAD13 Disc Rival AXS</div>
         </div>
     </section>
 
-    <section>
+    
+
+    <section id="specs">
         <div>
-            <h3>Specs</h3>
+
+            <h3>Bike Specifications</h1>
+                <table>
+                    <tr>
+                        <th colspan="2">Details</th>
+                    </tr>
+                    <tr>
+                        <td style="width: 200px;">Platform</td>
+                        <td>CAAD13</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 200px;">Model Name</td>
+                        <td>CAAD13 Disc Rival AXS</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 200px;">Model Code</td>
+                        <td>C13201U</td>
+                    </tr>
+                
+                    <tr>
+                        <th colspan="2">Frameset</th>
+                    </tr>
+                    <tr>
+                        <td style="width: 200px;">Frame</td>
+                        <td>SmartForm C1 Premium Alloy, 12x142 Speed Release thru-axle, flat-mount disc, integrated cable routing w/ Switchplate, SAVE, BB30a, Di2 ready</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 200px;">Fork</td>
+                        <td>CAAD13 Full Carbon, SAVE, 1-1/8" to 1-1/4" steerer, integrated crown race, 12x100mm Speed Release thru-axle, flat mount disc, internal routing, 55mm offset (47-54cm) 45mm offset (56-62cm)</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 200px;">Headset</td>
+                        <td>CAAD13, integrated, 1-1/8" - 1-1/4"</td>
+                    </tr>
+                
+                    <tr>
+                        <th colspan="2">Drivetrain</th>
+                    </tr>
+                    <tr>
+                        <td style="width: 200px;">Rear Derailleur</td>
+                        <td>SRAM Rival eTap AXS</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 200px;">Front Derailleur</td>
+                        <td>SRAM Rival eTap AXS, braze-on</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 200px;">Shifters</td>
+                        <td>SRAM Rival eTap AXS HRD</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 200px;">Chain</td>
+                        <td>SRAM Rival, 12-speed</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 200px;">Crank</td>
+                        <td>SRAM Rival DUB X-Range, 48/35</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 200px;">Rear Cogs</td>
+                        <td>SRAM Rival XG-1250, 10-36, 12-speed</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 200px;">Bottom Bracket</td>
+                        <td>SRAM DUB BB30A Road 73mm</td>
+                    </tr>
+                
+                    <tr>
+                        <th colspan="2">Brakes</th>
+                    </tr>
+                    <tr>
+                        <td style="width: 200px;">Brakes</td>
+                        <td>SRAM Rival hydraulic disc, 160/160mm Paceline rotors</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 200px;">Brake Levers</td>
+                        <td>SRAM Rival eTap AXS HRD</td>
+                    </tr>
+                
+                    <tr>
+                        <th colspan="2">Wheels</th>
+                    </tr>
+                    <tr>
+                        <td style="width: 200px;">Rims</td>
+                        <td>DT Swiss R470 db, 28h</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 200px;">Spokes</td>
+                        <td>Stainless Steel, 14g</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 200px;">Tire Size</td>
+                        <td>25</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 200px;">Wheel Size</td>
+                        <td>700c</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 200px;">Hubs</td>
+                        <td>(F) Formula CL-712, 12x100mm centerlock / (R) Formula RXC-400, 12x142mm centerlock</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 200px;">Tires</td>
+                        <td>Vittoria Rubino Pro Bright Black, 700x25c</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 200px;">Front Tire</td>
+                        <td>Vittoria Rubino Pro Bright Black, 700x25c</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 200px;">Rear Tire</td>
+                        <td>Vittoria Rubino Pro Bright Black, 700x25c</td>
+                    </tr>
+                
+                    <tr>
+                        <th colspan="2">Components</th>
+                    </tr>
+                    <tr>
+                        <td style="width: 200px;">Handlebar</td>
+                        <td>Cannondale 3, 6061 Alloy, Compact</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 200px;">Stem</td>
+                        <td>Cannondale 3, 6061 Alloy, 31.8, 7°</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 200px;">Grips</td>
+                        <td>Cannondale Bar Tape, 3.5mm</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 200px;">Saddle</td>
+                        <td>Fizik Aliante Delta, S-alloy rails</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 200px;">Seatpost</td>
+                        <td>HollowGram 27 SL KNØT, Carbon, 2 bolt clamp, 330mm, 0mm offset (44-48cm), 15mm offset (51-62cm)</td>
+                    </tr>
+                </table>
+
         </div>
     </section>
 
-
-    <section>
+    <section id="geometry">
         <div>
             <h3>Geometry</h3>
             <img src="../images/geometry-C22_C13201U_CAAD13_Disc_Rival_AXS_CHK_PD.png" alt="Geometry" width="50%">
+        </div>
+    </section>
+
+    <section id="video">
+        <div>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/dsVb81DuHO8?si=-1sveUJ6rsr4zJPR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
     </section>
 
